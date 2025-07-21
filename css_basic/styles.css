@@ -23,3 +23,25 @@ aside {
   flex: 1;
   overflow-y: auto;
 }
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #1a73e8;
+  color: white;
+  padding: 1rem;
+}
+
+footer {
+  text-align: center;
+  color: #555;
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+}
+
+.logo {
+  font-size: 2rem;
+  margin-right: 10px;
+}
