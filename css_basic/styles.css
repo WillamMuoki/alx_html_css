@@ -1,0 +1,25 @@
+/* Make body a flex container with vertical stacking */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Make main a flex container with horizontal stacking */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+/* Split main into 2/3 and 1/3 for article and aside */
+article {
+  flex: 2;
+  overflow-y: auto;
+}
+
+aside {
+  flex: 1;
+  overflow-y: auto;
+}
