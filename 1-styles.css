@@ -1,0 +1,161 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --primary-color: #ff6565;
+  --max-width: 1000px;
+  --font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Base Styles */
+body {
+  font-family: var(--font-family);
+  color: #fff;
+  background-color: #000;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.site-header {
+  background-color: #000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.site-nav a:hover,
+.site-nav a:active {
+  color: var(--primary-color);
+}
+
+/* Hero */
+.hero {
+  background: url('images/headphones_hero.jpg') no-repeat center center/cover;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-content button {
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.hero-content button:hover,
+.hero-content button:active {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .header-content,
+  .site-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+/* What We Do Section */
+.what-we-do {
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.section-desc {
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service {
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: #ff6565;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    margin-bottom: 40px;
+  }
+}
+
