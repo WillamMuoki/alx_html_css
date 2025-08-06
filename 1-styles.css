@@ -1,3 +1,7 @@
+src: url('fonts/holberton_school-icon.woff2') format('woff2'),
+     url('fonts/holberton_school-icon.woff') format('woff'),
+     url('fonts/holberton_school-icon.ttf') format('truetype');
+
 /* Reset */
 * {
   margin: 0;
