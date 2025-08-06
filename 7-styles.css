@@ -1,0 +1,231 @@
+/* Reset and Base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #000;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #ff5a5f;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Features Section */
+.features {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #f7f7f7;
+  padding: 30px;
+  margin: 15px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card span {
+  font-size: 40px;
+  color: #ff5a5f;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Results Section */
+.results {
+  background-color: #eaeaea;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.result-metrics {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.metric {
+  margin: 20px;
+}
+
+.metric h3 {
+  font-size: 36px;
+  color: #ff5a5f;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-section .container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #ff5a5f;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #e14b4f;
+}
+/* Footer */
+.footer {
+  background-color: #000;
+  color: white;
+  padding: 40px 20px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: #ff5a5f;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  font-size: 12px;
+  color: #999;
+}
+/* Animation keyframes */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+@keyframes rotate-in {
+  from {
+    transform: rotate(-10deg) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+/* WHAT WE DO section */
+.what-we-do .item {
+  animation: bounce 2s infinite;
+  transition: transform 0.3s;
+}
+
+.what-we-do .item:hover {
+  transform: scale(1.05);
+}
+
+/* OUR RESULTS section */
+.results .pentagon {
+  animation: rotate-in 1s ease-in-out;
+  transition: transform 0.3s ease;
+}
+
+.results .pentagon:hover {
+  animation: pulse 2s infinite;
+}
